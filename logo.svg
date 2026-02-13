@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Dark futuristic background -->
+  <rect width="200" height="200" fill="#0f172a" rx="20"/>
+  
+  <!-- Outer glow ring -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="url(#orangeGradient)" stroke-width="3" opacity="0.3">
+    <animate attributeName="r" values="85;90;85" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Main circular arc - Electric Blue -->
+  <path d="M 100 30 A 70 70 0 1 1 99.9 30" fill="none" stroke="url(#blueGradient)" stroke-width="8" stroke-linecap="round">
+    <animate attributeName="stroke-dasharray" values="0 440;440 0" dur="1.5s" fill="freeze"/>
+  </path>
+  
+  <!-- Secondary arc - Vibrant Orange -->
+  <path d="M 100 170 A 70 70 0 1 1 99.9 170" fill="none" stroke="url(#orangeGradient)" stroke-width="8" stroke-linecap="round" transform="rotate(180 100 100)">
+    <animate attributeName="stroke-dasharray" values="0 440;440 0" dur="1.5s" begin="0.5s" fill="freeze"/>
+  </path>
+  
+  <!-- Center monitor icon -->
+  <rect x="60" y="55" width="80" height="55" rx="5" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="65" y="60" width="70" height="40" rx="2" fill="url(#screenGradient)"/>
+  
+  <!-- Code lines on monitor -->
+  <line x1="70" y1="68" x2="95" y2="68" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
+  <line x1="70" y1="76" x2="105" y2="76" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+  <line x1="70" y1="84" x2="90" y2="84" stroke="#06b6d4" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Monitor stand -->
+  <rect x="85" y="110" width="30" height="8" rx="2" fill="#3b82f6"/>
+  <rect x="75" y="118" width="50" height="5" rx="2" fill="#1e40af"/>
+  
+  <!-- Bar chart -->
+  <rect x="140" y="70" width="8" height="30" rx="1" fill="#f59e0b" opacity="0.9">
+    <animate attributeName="height" values="30;35;30" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="152" y="60" width="8" height="40" rx="1" fill="#06b6d4" opacity="0.9">
+    <animate attributeName="height" values="40;45;40" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="164" y="50" width="8" height="50" rx="1" fill="#10b981" opacity="0.9">
+    <animate attributeName="height" values="50;55;50" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Line chart -->
+  <polyline points="130,130 140,120 150,125 160,115 170,120" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <animate attributeName="stroke-dasharray" values="0 50;50 0" dur="1s" fill="freeze"/>
+  </polyline>
+  <circle cx="140" cy="120" r="3" fill="#f97316"/>
+  <circle cx="150" cy="125" r="3" fill="#f97316"/>
+  <circle cx="160" cy="115" r="3" fill="#f97316"/>
+  <circle cx="170" cy="120" r="3" fill="#f97316"/>
+  
+  <!-- Pie chart -->
+  <circle cx="155" cy="160" r="20" fill="none" stroke="#ef4444" stroke-width="8" stroke-dasharray="25 50" transform="rotate(-90 155 160)"/>
+  <circle cx="155" cy="160" r="20" fill="none" stroke="#3b82f6" stroke-width="8" stroke-dasharray="15 50" stroke-dashoffset="25" transform="rotate(90 155 160)"/>
+  
+  <!-- Light rays effect -->
+  <g opacity="0.15">
+    <line x1="100" y1="100" x2="100" y2="20" stroke="url(#blueGradient)" stroke-width="3"/>
+    <line x1="100" y1="100" x2="180" y2="100" stroke="url(#orangeGradient)" stroke-width="3"/>
+    <line x1="100" y1="100" x2="20" y2="100" stroke="url(#blueGradient)" stroke-width="3"/>
+    <line x1="100" y1="100" x2="100" y2="180" stroke="url(#orangeGradient)" stroke-width="3"/>
+  </g>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
+    </linearGradient>
+    
+    <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316"/>
+      <stop offset="100%" style="stop-color:#f59e0b"/>
+    </linearGradient>
+    
+    <linearGradient id="screenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
+    </linearGradient>
+  </defs>
+</svg>

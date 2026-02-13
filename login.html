@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - GITHU TECH</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Sunset Background -->
+    <div class="sunset-background">
+        <div class="sunset-gradient"></div>
+        <div class="sunset-overlay"></div>
+        <div class="sun-container">
+            <div class="sun"></div>
+            <div class="sun-rays"></div>
+        </div>
+        <div class="clouds">
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+            <div class="cloud cloud-3"></div>
+        </div>
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <div class="light-rays">
+            <div class="ray ray-1"></div>
+            <div class="ray ray-2"></div>
+            <div class="ray ray-3"></div>
+        </div>
+    </div>
+
+    <!-- Back to Home Link -->
+    <a href="index.html" class="back-link">
+        <i class="fas fa-arrow-left"></i> Back to Home
+    </a>
+
+    <!-- Glassmorphism Login Panel -->
+    <div class="login-container">
+        <div class="login-panel" id="loginPanel">
+            <div class="panel-header">
+                <div class="logo">
+                    <img src="logo.svg" alt="GITHU TECH Logo" class="login-logo-img">
+                    <span class="logo-text">GITHU TECH</span>
+                </div>
+                <h2>Welcome Back</h2>
+                <p>Sign in to access your dashboard</p>
+            </div>
+
+            <form class="login-form" id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">
+                        <i class="fas fa-envelope"></i> Email Address
+                    </label>
+                    <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                    <span class="input-glow"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">
+                        <i class="fas fa-lock"></i> Password
+                    </label>
+                    <div class="password-wrapper">
+                        <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                        <button type="button" class="toggle-password">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <span class="input-glow"></span>
+                </div>
+
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <span class="checkmark"></span>
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="btn-login-submit">
+                    <span class="btn-text">Sign In</span>
+                    <span class="btn-icon">
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                    <div class="btn-overlay"></div>
+                </button>
+            </form>
+
+            <div class="divider">
+                <span>or continue with</span>
+            </div>
+
+            <div class="social-login">
+                <button class="social-btn google">
+                    <i class="fab fa-google"></i>
+                </button>
+                <button class="social-btn facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </button>
+                <button class="social-btn twitter">
+                    <i class="fab fa-twitter"></i>
+                </button>
+            </div>
+
+            <div class="panel-footer">
+                <p>Don't have an account? <a href="#" id="switchToSignup">Sign Up</a></p>
+            </div>
+        </div>
+
+        <!-- Glassmorphism Signup Panel (Hidden by default) -->
+        <div class="signup-panel" id="signupPanel" style="display: none;">
+            <div class="panel-header">
+                <div class="logo">
+                    <img src="logo.svg" alt="GITHU TECH Logo" class="login-logo-img">
+                    <span class="logo-text">GITHU TECH</span>
+                </div>
+                <h2>Create Account</h2>
+                <p>Join GITHU TECH today</p>
+            </div>
+
+            <form class="signup-form" id="signupForm">
+                <div class="form-group">
+                    <label for="signupName">
+                        <i class="fas fa-user"></i> Full Name
+                    </label>
+                    <input type="text" id="signupName" placeholder="Enter your name" required>
+                    <span class="input-glow"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="signupEmail">
+                        <i class="fas fa-envelope"></i> Email Address
+                    </label>
+                    <input type="email" id="signupEmail" placeholder="Enter your email" required>
+                    <span class="input-glow"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="signupPassword">
+                        <i class="fas fa-lock"></i> Password
+                    </label>
+                    <div class="password-wrapper">
+                        <input type="password" id="signupPassword" placeholder="Create a password" required>
+                        <button type="button" class="toggle-password">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <span class="input-glow"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">
+                        <i class="fas fa-lock"></i> Confirm Password
+                    </label>
+                    <div class="password-wrapper">
+                        <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+                        <button type="button" class="toggle-password">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <span class="input-glow"></span>
+                </div>
+
+                <button type="submit" class="btn-login-submit">
+                    <span class="btn-text">Create Account</span>
+                    <span class="btn-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </span>
+                    <div class="btn-overlay"></div>
+                </button>
+            </form>
+
+            <div class="divider">
+                <span>or sign up with</span>
+            </div>
+
+            <div class="social-login">
+                <button class="social-btn google">
+                    <i class="fab fa-google"></i>
+                </button>
+                <button class="social-btn facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </button>
+                <button class="social-btn twitter">
+                    <i class="fab fa-twitter"></i>
+                </button>
+            </div>
+
+            <div class="panel-footer">
+                <p>Already have an account? <a href="#" id="switchToLogin">Sign In</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
